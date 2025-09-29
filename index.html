@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Древесный Оазис | Отель в саванне</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Уведомление -->
+    <div id="notification" class="notification"></div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">🌴 Древесный Оазис</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">Об отеле</a></li>
+                    <li><a href="#rooms">Номера</a></li>
+                    <li><a href="#amenities">Услуги</a></li>
+                    <li><a href="#booking">Бронирование</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Древесный Оазис</h1>
+            <p>Уникальный отель в сердце саванны с ручными попугаями и гепардами</p>
+            <a href="#booking" class="btn">Забронировать сейчас</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Об отеле</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Древесный Оазис — это уникальный опыт погружения в природу с комфортом современной жизни. Наши домики на деревьях спроектированы так, чтобы гармонично вписываться в окружающий ландшафт.</p>
+                    <p>Мы гордимся нашими ручными попугаями и гепардами, которые создают неповторимую атмосферу дикой природы.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Отель в дереве">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Наши номера</h2>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1586375300773-8384e3e4916f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Номер Акация">
+                    <div class="room-info">
+                        <h3>Акация</h3>
+                        <p>15 000 руб./ночь</p>
+                        <ul>
+                            <li>Панорамные окна</li>
+                            <li>Собственная терраса</li>
+                            <li>Открытая ванна</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Номер Баобаб">
+                    <div class="room-info">
+                        <h3>Баобаб</h3>
+                        <p>20 000 руб./ночь</p>
+                        <ul>
+                            <li>Двухуровневый номер</li>
+                            <li>Отдельная гостиная</li>
+                            <li>Панорамный вид</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="section">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <div class="amenities-grid">
+                <div class="amenity">
+                    <span class="amenity-icon">🦜</span>
+                    <h3>Ручные попугаи</h3>
+                    <p>Яркие и дружелюбные попугаи создают неповторимую атмосферу</p>
+                </div>
+                <div class="amenity">
+                    <span class="amenity-icon">🐆</span>
+                    <h3>Гепарды-компаньоны</h3>
+                    <p>Уникальная возможность наблюдать за грациозными гепардами</p>
+                </div>
+                <div class="amenity">
+                    <span class="amenity-icon">🌅</span>
+                    <h3>Сафари-туры</h3>
+                    <p>Незабываемые сафари-туры с опытными гидами</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Бронирование</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">ФИО *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="roomType">Тип номера *</label>
+                        <select id="roomType" name="roomType" required>
+                            <option value="">Выберите номер</option>
+                            <option value="Акация">Акация - 15 000 руб./ночь</option>
+                            <option value="Баобаб">Баобаб - 20 000 руб./ночь</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkin">Дата заезда *</label>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Дата выезда *</label>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Количество гостей *</label>
+                    <input type="number" id="guests" name="guests" min="1" max="4" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Дополнительные пожелания</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2 class="section-title">Отзывы гостей</h2>
+            <div id="reviewsList" class="reviews-list">
+                <!-- Отзывы будут загружаться здесь -->
+            </div>
+            <div class="review-form-container">
+                <h3>Оставить отзыв</h3>
+                <form id="reviewForm" class="review-form">
+                    <div class="form-group">
+                        <label for="reviewName">Ваше имя *</label>
+                        <input type="text" id="reviewName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewText">Ваш отзыв *</label>
+                        <textarea id="reviewText" name="text" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить отзыв</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>📞 +7 (999) 123-45-67</p>
+                    <p>✉️ info@derevnyoazis.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Адрес</h3>
+                    <p>Саванна, Заповедник "Африканская мечта"</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Древесный Оазис. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
